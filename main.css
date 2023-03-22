@@ -36,7 +36,29 @@ body {
     background: var(--main-background);
     border-radius: 0 0 10px 10px;
 }
-.nav{
+
+.length{
+    width: 476px;
+    height: 32px;
+    display: flex;
+    gap: 360px;
+    margin-bottom: 10px;
+}
+
+.length p{
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+span{
+    width: 25px;
+    height: 32px;
+    font-size: 25px;
+    color: rgb(164, 255, 175);
+}
+
+
+.nav {
     padding: 30px;
     border-radius: 10px 10px 0 0;
     background: var(--main-background);
