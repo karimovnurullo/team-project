@@ -3,3 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.nav{
+    display: flex;
+}
+.copy-div{
+    display: flex;
+}
