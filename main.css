@@ -2,12 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 :root{
     --body-background: #18171F;
     --main-background: #24232C;
     --text-color: #e6e5ea;
     --body-color: #e6e5ea;
+    --green-color: rgb(164,255,175);
 }
 body{
    height: 100vh;
@@ -31,7 +33,25 @@ body{
     border-radius: 0 0 10px 10px;
 }
 .nav{
+    display: flex;
+    justify-content: space-between;
     padding: 30px;
     border-radius: 10px 10px 0 0;
     background: var(--main-background);
+}
+.generate-div{
+    font-size: 30px;
+    color: var(--text-color);
+}
+.copy-div{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    gap: 10px;
+cursor: pointer;
+color: var(--green-color);
+
+}
+.copy-div:active{
+    transform: scale(0.95);
 }
