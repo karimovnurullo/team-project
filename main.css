@@ -44,21 +44,19 @@ body {
     gap: 360px;
     margin-bottom: 10px;
 }
-
 .length p{
     font-size: 22px;
     color: var(--text-color);
 }
-
 span{
     width: 25px;
     height: 32px;
     font-size: 25px;
     color: rgb(164, 255, 175);
 }
-
-
 .nav {
+    display: flex;
+    justify-content: space-between;
     padding: 30px;
     border-radius: 10px 10px 0 0;
     background: var(--main-background);
@@ -71,10 +69,9 @@ span{
     display: flex;
     align-items: center;
     font-size: 22px;
-    gap: 10px;
-cursor: pointer;
-color: var(--green-color);
-
+    gap: 5px;
+    cursor: pointer;
+    color: var(--green-color);
 }
 .copy-div:active{
     transform: scale(0.95);
