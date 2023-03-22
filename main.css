@@ -1,7 +1,9 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Poppins    ;
 }
 
 :root {
@@ -21,15 +23,13 @@ body {
     color: var(--body-color);
     background: var(--body-background);
 }
-
-.container {
+.container{
     width: 540px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
-.main {
+.main{
     padding: 30px;
     background: var(--main-background);
     border-radius: 0 0 10px 10px;
