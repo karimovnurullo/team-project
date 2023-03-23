@@ -2,22 +2,15 @@ const generateDiv = document.querySelector('.generate-div'),
     copyDiv = document.querySelector('.copy-div'),
     range = document.querySelector('.range'),
     number = document.querySelector('.number'),
-    uppercaseEl = document.querySelector('.uppercase'),
-    lowercaseEl = document.querySelector('.lowercase'),
-    digitEl = document.querySelector('.include-number'),
-    symbolEl = document.querySelector('.symbols'),
-    generateEl = document.querySelector('.generate-btn');
+    generatebtn = document.querySelector('.generate-btn');
 
-
-
-
+const uppercaseChekbox = document.querySelector('.uppercase-chekbox'),
+    lowercaseChekbox = document.querySelector('.lowercase-checbox'),
+    numberChekbox = document.querySelector('.number-checbox'),
+    symbolChekbox = document.querySelector('.symbol-checbox');
 range.addEventListener('input', () => {
     number.textContent = range.value;
 });
-const uppercaseChekbox = document.querySelector('uppercase-chekbox'),
-    lowercaseChekbox = document.querySelector('lowercase-checbox'),
-    numberChekbox = document.querySelector('number-checbox'),
-    symbolChekbox = document.querySelector('symbol-checbox');
 
 function getRandomChar(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
@@ -30,3 +23,11 @@ function generatePassword(length, includeUppercase, includeLowercase, includeDig
     const symbolChars = '`~!@#$%^&*()-_=+[{]}\\|;:\'",<.>/?'.split('');
 }
 
+
+generatebtn.addEventListener('click', () => {
+    const includeLowercase = lowercaseChekbox.checked;
+      const includeUppercase = uppercaseChekbox.checked;
+    const includenumber = numberChekbox.checked;
+     const includeSymbol = symbolChekbox.checked;
+
+})
