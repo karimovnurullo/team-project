@@ -28,5 +28,13 @@ function generatePassword(length, includeUppercase, includeLowercase, includeDig
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz'.split('');
     const digitChars = '0123456789'.split('');
     const symbolChars = '`~!@#$%^&*()-_=+[{]}\\|;:\'",<.>/?'.split('');
+
+    let password = '';
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * chars.length);
+      password += chars[randomIndex];
+    }
+  
+    return password;
 }
 
