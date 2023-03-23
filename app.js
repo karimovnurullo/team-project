@@ -29,5 +29,8 @@ generatebtn.addEventListener('click', () => {
       const includeUppercase = uppercaseChekbox.checked;
     const includenumber = numberChekbox.checked;
      const includeSymbol = symbolChekbox.checked;
+     
 
+     const password = generatePassword(passwordLength, includeUppercase, includeLowercase, includenumber, includeSymbol);
+     passwordOutput.textContent = password;
 })
